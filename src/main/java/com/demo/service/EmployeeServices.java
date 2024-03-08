@@ -30,7 +30,6 @@ public class EmployeeServices {
 	
 	
 	//get emp by id
-	
 	public Employee getById(Long id)
 	{
 		return employeeDao.getEmpById(id);
@@ -38,7 +37,6 @@ public class EmployeeServices {
 	
 	
 	// update employee
-	
 	public void updateEmp(Employee emp)
 	{
 		employeeDao.updateEmp(emp);
@@ -46,7 +44,6 @@ public class EmployeeServices {
 	
 	
 	//delete employee 
-	
 	public void deleteEmployee(Long id)
 	{
 		employeeDao.deleteEmp(id);

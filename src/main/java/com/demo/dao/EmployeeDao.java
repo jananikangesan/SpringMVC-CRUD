@@ -43,7 +43,6 @@ public class EmployeeDao {
 	
 	
 	//update employee
-	
 	@Transactional
 	public void updateEmp(Employee emp)
 	{

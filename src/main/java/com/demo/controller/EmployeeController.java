@@ -19,7 +19,7 @@ public class EmployeeController {
 	@Autowired
 	EmployeeServices employeeServices;
 	
-	//lode add employee form
+	//load add employee form
 	@GetMapping("addEmployee")
 	public String  addEmp()
 	{
@@ -36,7 +36,7 @@ public class EmployeeController {
 		return "redirect:/employeeReport";
 	}
 	
-	//lode employee data
+	//load employee data
 	@GetMapping("employeeReport")
 	public String lodeEmployee(Model m)
 	{
