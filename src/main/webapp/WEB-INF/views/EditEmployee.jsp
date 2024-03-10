@@ -11,14 +11,19 @@
 
 	<div class="container mt-3">
 
-		<h1>Edit Employee Form</h1>
+		
+		<div class="row p-2">
+			<div class="col-md-12 bg-light text-center">	
+				<h1>Edit Employee</h1>
+			</div>
+		</div>
+		
 		<form action="updateEmployee" method="post">
 
 			<div class="row">
 				<div class="col">
 					<div class="form-group">
-						<label for="id">Id</label> <input type="text"
-							value="${employee.id}" class="form-control" id="id" name="id"
+						<input type="hidden" value="${employee.id}" class="form-control" id="id" name="id"
 							readonly="readonly">
 					</div>
 				</div>
@@ -70,7 +75,7 @@
 				</div>
 			</div>
 
-			<button type="submit" class="btn btn-primary">Submit</button>
+			<button type="submit" class="btn btn-success">Submit</button>
 		</form>
 
 	</div>

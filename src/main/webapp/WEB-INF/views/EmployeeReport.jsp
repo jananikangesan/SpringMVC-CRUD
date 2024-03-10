@@ -10,12 +10,23 @@
 
 
 	<div class="container mt-3">
-
-		<h1>Add Employee Form</h1>
-		<a href="addEmployee" class="btn btn-primary"> Add Employee </a>
+	
+		<div class="row p-2">
+			<div class="col-md-12 bg-light text-center">	
+				<h1> Employee's Records</h1>
+			</div>
+		</div>
+		
+		<div class="row p-2">
+        	<div class="col-md-12 bg-light text-right">
+        		<a href="addEmployee" class="btn btn-primary"> Add Employee </a>
+        	</div>
+       	</div>
+        
+		
 		<div class="row">
 
-			<table class="table table-hover">
+			<table class="table table-striped table-hover">
 				<thead>
 					<tr>
 						<th scope="col">ID</th>
@@ -37,7 +48,7 @@
 							<td>${emp.salary}</td>
 							<td>${emp.address}</td>
 							<td>${emp.designation}</td>
-							<td><a href="editEmployee/${emp.id}" class="btn btn-warning">
+							<td><a href="editEmployee/${emp.id}" class="btn btn-info">
 									Edit </a></td>
 							<td><a href="deleteEmployee/${emp.id}"
 								class="btn btn-danger"> Delete </a></td>
