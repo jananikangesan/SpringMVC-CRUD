@@ -32,11 +32,8 @@ public class EmployeeDao {
 	}
 	
 	//get employee by id
-	@Transactional
 	public Employee getEmpById(Long id)
 	{
-		
-		
 		Employee emp= hiberneteTemplate.get(Employee.class, id);
 		return emp;
 	}

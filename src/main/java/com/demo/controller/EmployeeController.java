@@ -38,7 +38,7 @@ public class EmployeeController {
 	
 	//load employee data
 	@GetMapping("employeeReport")
-	public String lodeEmployee(Model m)
+	public String loadEmployee(Model m)
 	{
 		m.addAttribute("employee", employeeServices.getAllEmp());
 		m.addAttribute("title", "Employee Report");
@@ -48,7 +48,7 @@ public class EmployeeController {
 	
 	//load edit form 
 	@GetMapping("/editEmployee/{id}")
-	public String lodeEditForm(@PathVariable(value="id") Long id, Model m)
+	public String loadEditForm(@PathVariable(value="id") Long id, Model m)
 	{
 		Employee emp=employeeServices.getById(id);
 		
