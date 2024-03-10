@@ -14,27 +14,27 @@ import com.demo.model.Employee;
 public class EmployeeDao {
 
 	@Autowired
-	HibernateTemplate hiberneteTemplate;
+	HibernateTemplate hibernateTemplate;
 	
 	
 	//add employee
 	@Transactional
 	public void addEmployee(Employee emp)
 	{
-		hiberneteTemplate.save(emp);
+		hibernateTemplate.save(emp);
 	}
 	
 	
 	//get all employee
 	public List<Employee> getAllEmp()
 	{
-		return hiberneteTemplate.loadAll(Employee.class);
+		return hibernateTemplate.loadAll(Employee.class);
 	}
 	
 	//get employee by id
 	public Employee getEmpById(Long id)
 	{
-		Employee emp= hiberneteTemplate.get(Employee.class, id);
+		Employee emp= hibernateTemplate.get(Employee.class, id);
 		return emp;
 	}
 	
@@ -43,7 +43,7 @@ public class EmployeeDao {
 	@Transactional
 	public void updateEmp(Employee emp)
 	{
-		hiberneteTemplate.update(emp);
+		hibernateTemplate.update(emp);
 	}
 	
 	
@@ -51,6 +51,6 @@ public class EmployeeDao {
 	@Transactional
 	public void deleteEmp(Long id)
 	{
-		hiberneteTemplate.delete(hiberneteTemplate.load(Employee.class, id));
+		hibernateTemplate.delete(hibernateTemplate.load(Employee.class, id));
 	}
 }
