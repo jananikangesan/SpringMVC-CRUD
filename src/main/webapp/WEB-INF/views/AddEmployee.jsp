@@ -8,7 +8,6 @@
 </head>
 <body>
 	<div class="container mt-3">
-
 		
 		<div class="row p-2">
 			<div class="col-md-12 bg-light text-center">	

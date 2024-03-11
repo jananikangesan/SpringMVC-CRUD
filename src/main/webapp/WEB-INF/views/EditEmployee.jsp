@@ -11,7 +11,6 @@
 
 	<div class="container mt-3">
 
-		
 		<div class="row p-2">
 			<div class="col-md-12 bg-light text-center">	
 				<h1>Edit Employee</h1>
@@ -23,8 +22,7 @@
 			<div class="row">
 				<div class="col">
 					<div class="form-group">
-						<input type="hidden" value="${employee.id}" class="form-control" id="id" name="id"
-							readonly="readonly">
+						<input type="hidden" value="${employee.id}" class="form-control" id="id" name="id">
 					</div>
 				</div>
 			</div>
